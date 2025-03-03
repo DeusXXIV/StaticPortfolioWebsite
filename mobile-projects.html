@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mobile Projects - David Carlo Fermo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .project-card-link:hover .project-card {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header (same structure as above) -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">DCF Dev</div>
+      <nav class="desktop-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <!-- Sun and Moon Icons -->
+          <!-- ... (same as above) -->
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+        <!-- Hamburger Icon -->
+      </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Mobile Icons -->
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section id="mobile-projects" class="section">
+      <div class="container">
+        <h2>Mobile Projects</h2>
+        <p>Showcasing innovative mobile applications with robust design and seamless performance.</p>
+        <div class="projects-grid">
+          <a href="featured-mobile-project.html" class="project-card-link">
+            <div class="project-card featured">
+              <h3>Mobile App Project <span class="badge">Featured</span></h3>
+              <p>A comprehensive mobile application featuring an intuitive UI and optimized performance.</p>
+            </div>
+          </a>
+          <!-- Additional mobile project cards can be added here -->
+        </div>
+        <a href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as above) -->
+  <footer class="footer">
+    <div class="container">
+      &copy; <span id="year"></span> DCF Dev by David Carlo Fermo. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

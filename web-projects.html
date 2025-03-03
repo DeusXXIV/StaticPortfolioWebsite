@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Development Projects - David Carlo Fermo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .project-card-link:hover .project-card {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">DCF Dev</div>
+      <nav class="desktop-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <!-- Sun Icon -->
+          <svg id="icon-sun" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon -->
+          <svg id="icon-moon" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+          </svg>
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+        <!-- Hamburger Icon -->
+        <svg id="icon-hamburger" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Mobile Icons -->
+        <svg id="icon-sun-mobile" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg id="icon-moon-mobile" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section id="web-projects" class="section">
+      <div class="container">
+        <h2>Web Development Projects</h2>
+        <p>Showcasing responsive designs, dynamic functionality, and modern development practices.</p>
+        <div class="projects-grid">
+          <!-- Featured Web Project Card -->
+          <a href="featured-web-project.html" class="project-card-link">
+            <div class="project-card featured">
+              <h3>Featured Web Project <span class="badge">Featured</span></h3>
+              <p>A robust web application emphasizing performance, scalability, and an engaging UI.</p>
+            </div>
+          </a>
+          <!-- Additional Web Project Cards -->
+          <a href="responsive-website.html" class="project-card-link">
+            <div class="project-card">
+              <h3>Responsive Website</h3>
+              <p>A fully responsive site crafted with HTML, CSS, and JavaScript.</p>
+            </div>
+          </a>
+          <a href="dynamic-web-app.html" class="project-card-link">
+            <div class="project-card">
+              <h3>Dynamic Web Application</h3>
+              <p>An interactive app featuring real-time updates and API integrations.</p>
+            </div>
+          </a>
+        </div>
+        <a href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      &copy; <span id="year"></span> DCF Dev by David Carlo Fermo. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

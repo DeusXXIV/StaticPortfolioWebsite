@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Science Projects - David Carlo Fermo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .project-card-link:hover .project-card {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">DCF Dev</div>
+      <nav class="desktop-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <!-- Sun and Moon Icons -->
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+        <!-- Hamburger Icon -->
+      </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Mobile Icons -->
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section id="data-science" class="section">
+      <div class="container">
+        <h2>Data Science Projects</h2>
+        <p>Stay tuned for upcoming projects involving data analysis, machine learning, and visualization.</p>
+        <div class="projects-grid">
+          <a href="coming-soon.html" class="project-card-link">
+            <div class="project-card coming-soon">
+              <h3>Data Science Projects <span class="badge">Coming Soon</span></h3>
+              <p>New projects in data science will be added here soon.</p>
+            </div>
+          </a>
+        </div>
+        <a href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      &copy; <span id="year"></span> DCF Dev by David Carlo Fermo. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

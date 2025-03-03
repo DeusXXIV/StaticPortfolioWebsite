@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Projects - David Carlo Fermo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .project-card-link:hover .project-card {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">DCF Dev</div>
+      <nav class="desktop-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <!-- Sun and Moon Icons -->
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+        <!-- Hamburger Icon -->
+      </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Mobile Icons -->
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section id="game-projects" class="section">
+      <div class="container">
+        <h2>Game Projects</h2>
+        <p>Showcasing creative game projects, including my flagship school project.</p>
+        <div class="projects-grid">
+          <a href="flagship-game.html" class="project-card-link">
+            <div class="project-card featured">
+              <h3>Flagship Game Project <span class="badge">Flagship</span></h3>
+              <p>A polished game developed as a school project that demonstrates core design and creative coding skills.</p>
+            </div>
+          </a>
+        </div>
+        <a href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      &copy; <span id="year"></span> DCF Dev by David Carlo Fermo. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

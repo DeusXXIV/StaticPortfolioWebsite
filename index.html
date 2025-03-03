@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Carlo Fermo - IT Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Make entire project card clickable */
+    .project-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .project-card-link:hover .project-card {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip Navigation Link -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">DCF Dev</div>
+      <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <!-- Sun Icon -->
+          <svg id="icon-sun" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon -->
+          <svg id="icon-moon" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+          </svg>
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+        <!-- Hamburger Icon -->
+        <svg id="icon-hamburger" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Mobile Sun Icon -->
+        <svg id="icon-sun-mobile" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Mobile Moon Icon -->
+        <svg id="icon-moon-mobile" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero" style="background-image: url('assets/hero-bg.jpg');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm an IT Professional specializing in Web, Mobile, PC Apps, and more.</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm David Carlo Fermo. I am passionate about creating innovative digital solutions. With expertise in web development, mobile design, desktop applications, and more, I strive to deliver impactful results.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- Web Projects Card -->
+          <a href="web-projects.html" class="project-card-link">
+            <div class="project-card">
+              <h3>Web Development Projects</h3>
+              <p>Responsive and dynamic web applications built with modern technologies.</p>
+            </div>
+          </a>
+          <!-- Mobile Projects Card (Featured) -->
+          <a href="mobile-projects.html" class="project-card-link">
+            <div class="project-card featured">
+              <h3>Mobile Projects <span class="badge">Featured</span></h3>
+              <p>Innovative mobile applications with robust design and functionality.</p>
+            </div>
+          </a>
+          <!-- PC Applications Card -->
+          <a href="pc-apps.html" class="project-card-link">
+            <div class="project-card">
+              <h3>PC Applications</h3>
+              <p>Desktop apps built with Python and Tkinter focusing on usability and performance.</p>
+            </div>
+          </a>
+          <!-- Game Projects Card -->
+          <a href="game-projects.html" class="project-card-link">
+            <div class="project-card">
+              <h3>Game Projects</h3>
+              <p>A showcase of creative game projects, including a flagship school game.</p>
+            </div>
+          </a>
+          <!-- Data Science Projects Card (Coming Soon) -->
+          <a href="data-science.html" class="project-card-link">
+            <div class="project-card coming-soon">
+              <h3>Data Science Projects <span class="badge">Coming Soon</span></h3>
+              <p>Projects involving data analysis, machine learning, and visualization will be added soon.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <h2>Resume</h2>
+        <p>Download my resume to learn more about my professional background.</p>
+        <a href="assets/Resume.pdf" class="download-btn" download>Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="_replyto" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      &copy; <span id="year"></span> DCF Dev by David Carlo Fermo. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
