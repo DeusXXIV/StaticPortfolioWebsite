@@ -331,7 +331,14 @@ body.dark #icon-moon-mobile {
   border-radius: 4px;
   margin-left: 5px;
 }
+/* For Coming Soon Cards */
 .project-card.coming-soon {
   opacity: 0.6;
-  pointer-events: none;
+  cursor: not-allowed; /* visually indicate it's inactive */
+}
+
+/* Hover effect still applies */
+.project-card.coming-soon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
