@@ -357,3 +357,37 @@ body.dark #icon-moon-mobile {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.social-links {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: var(--text-color); /* or a default color like #000 */
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-color); /* or a hover color like #0056b3 */
+}

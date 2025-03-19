@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>David Carlo Fermo - IT Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!--Icon CDN for Github, Linkedin, etc-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p7R2zr9A+MdStMXY4H3TvLO3OxAf/wY1pC0JAz6VhvjF+0zwIjqax9xYdP4q0K9BYcOkHYnWGf9YsX5tJv16qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     /* Make entire project card clickable */
     .project-card-link {
@@ -31,7 +35,7 @@
     <nav class="desktop-nav">
       <a href="index.html#about">About</a>
       <a href="index.html#projects">Projects</a>
-      <a href="skills.html">Skills</a>
+      <a href="index.html#skills">Skills</a>
       <a href="index.html#resume">Resume</a>
       <a href="index.html#contact">Contact</a>
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
@@ -71,7 +75,7 @@
   <nav id="mobile-nav" class="mobile-nav">
     <a href="index.html#about">About</a>
     <a href="index.html#projects">Projects</a>
-    <a href="skills.html">Skills</a>
+    <a href="index.html#skills">Skills</a>
     <a href="index.html#resume">Resume</a>
     <a href="index.html#contact">Contact</a>
     <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
@@ -106,8 +110,10 @@
       <div class="overlay"></div>
       <div class="hero-content">
         <h1>Welcome to My Portfolio</h1>
-        <p>I'm an IT Professional specializing in Web, Mobile, PC Apps, and more.</p>
-      </div>
+        <p>
+          2024 IT graduate from Ateneo de Naga University skilled in web development, data analytics, mobile apps, version control, database management, and back-end programming. Currently pursuing the Google Data Analytics Professional Certificate via Coursera.
+        </p>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -115,10 +121,13 @@
       <div class="container">
         <h2>About Me</h2>
         <p>
-          Hi, I'm David Carlo Fermo. I am passionate about creating innovative digital solutions. With expertise in web development, mobile design, desktop applications, and more, I strive to deliver impactful results.
+          I'm David Carlo Fermo, a results-driven IT professional passionate about creating innovative digital solutions. With experience in web development, mobile apps, data analytics, and back-end programming, I've honed my skills through real-world projects and leadership roles. I'm dedicated to continuous learning and excited to contribute to cutting-edge projects.
         </p>
+        <a href="#contact" class="cta-btn">Learn More</a>
       </div>
     </section>
+
+
 
     <!-- Projects Section -->
     <section id="projects" class="section projects">
@@ -162,6 +171,16 @@
       </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>My Skillset</h2>
+        <p>
+          With a diverse background spanning web development, mobile design, data analytics, and back-end programming, I bring a well-rounded set of skills to every project. My expertise includes HTML5, CSS3, JavaScript, React, Kotlin, Flutter, Dart, Java, PHP, and Python—along with proficiency in database management and cloud technologies. I continuously embrace new technologies to deliver innovative digital solutions.
+        </p>
+        <a href="skills.html" class="cta-btn">View All Skills</a>
+      </div>
+    </section>
 
 
     <!-- Resume Section -->
@@ -194,12 +213,19 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       &copy; <span id="year"></span> DCF Dev by David Carlo Fermo. All rights reserved.
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </div>
-  </footer>
+  </footer>   
 
   <script src="script.js"></script>
 </body>
