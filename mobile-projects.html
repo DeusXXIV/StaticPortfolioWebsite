@@ -18,34 +18,83 @@
   </style>
 </head>
 <body>
-  <!-- Header (same structure as above) -->
-  <header class="header">
-    <div class="container header-container">
-      <div class="logo">DCF Dev</div>
-      <nav class="desktop-nav">
-        <a href="index.html#about">About</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#resume">Resume</a>
-        <a href="index.html#contact">Contact</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-          <!-- Sun and Moon Icons -->
-          <!-- ... (same as above) -->
-        </button>
-      </nav>
-      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
-        <!-- Hamburger Icon -->
-      </button>
+  <!-- Header: Reuse your existing header -->
+<header class="header">
+  <div class="container header-container">
+    <div class="logo">
+      <a href="index.html">DCF Dev</a>
     </div>
-    <nav id="mobile-nav" class="mobile-nav">
+    <nav class="desktop-nav">
       <a href="index.html#about">About</a>
       <a href="index.html#projects">Projects</a>
+      <a href="skills.html">Skills</a>
       <a href="index.html#resume">Resume</a>
       <a href="index.html#contact">Contact</a>
-      <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-        <!-- Mobile Icons -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Sun Icon -->
+        <svg id="icon-sun" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Moon Icon -->
+        <svg id="icon-moon" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
       </button>
     </nav>
-  </header>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+      <!-- Hamburger Icon -->
+      <svg id="icon-hamburger" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="index.html#about">About</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="index.html#resume">Resume</a>
+    <a href="index.html#contact">Contact</a>
+    <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <!-- Mobile Sun Icon -->
+      <svg id="icon-sun-mobile" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <!-- Mobile Moon Icon -->
+      <svg id="icon-moon-mobile" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+      </svg>
+    </button>
+  </nav>
+</header>
+
 
   <!-- Main Content -->
   <main id="main-content">

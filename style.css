@@ -93,6 +93,12 @@ body {
   color: var(--text-color);
 }
 
+.logo a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;  /* or whatever styling you previously had */
+}
+
 /* Desktop Navigation */
 .desktop-nav {
   display: flex;

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills - David Carlo Fermo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Grid for skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    /* Skill card styling */
+    .skill-card {
+      position: relative;
+      padding: 1rem;
+      background: var(--header-bg);
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    /* Tooltip/modal for skill details */
+    .skill-tooltip {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent-color);
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 4px;
+      width: 250px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      z-index: 10;
+    }
+    .skill-card:hover .skill-tooltip {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header: Reuse your existing header -->
+<header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">DCF Dev</a>
+      </div>
+      <nav class="desktop-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <!-- Sun Icon -->
+          <svg id="icon-sun" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon -->
+          <svg id="icon-moon" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+          </svg>
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+        <!-- Hamburger Icon -->
+        <svg id="icon-hamburger" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <!-- Mobile Sun Icon -->
+        <svg id="icon-sun-mobile" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Mobile Moon Icon -->
+        <svg id="icon-moon-mobile" class="icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+  
+  
+  <!-- Main Content -->
+  <main id="main-content">
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <p>Hover over each skill to learn more about my experience and where I practiced them.</p>
+        <div class="skills-grid">
+          <!-- Skill Card: HTML5 -->
+          <div class="skill-card">
+            <h3>HTML5</h3>
+            <div class="skill-tooltip">
+              Developed numerous projects using semantic HTML5 in both professional and personal contexts.
+            </div>
+          </div>
+          <!-- Skill Card: CSS3 -->
+          <div class="skill-card">
+            <h3>CSS3</h3>
+            <div class="skill-tooltip">
+              Experienced with responsive design, Flexbox, Grid, and animations; practiced on various web projects.
+            </div>
+          </div>
+          <!-- Skill Card: JavaScript -->
+          <div class="skill-card">
+            <h3>JavaScript</h3>
+            <div class="skill-tooltip">
+              Proficient in modern JavaScript (ES6+), frameworks, and libraries through professional projects and self-study.
+            </div>
+          </div>
+          <!-- Skill Card: Python -->
+          <div class="skill-card">
+            <h3>Python</h3>
+            <div class="skill-tooltip">
+              Used for data analysis, scripting, and building desktop applications with Tkinter.
+            </div>
+          </div>
+          <!-- Add additional skill cards as needed -->
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      &copy; <span id="year"></span> DCF Dev by David Carlo Fermo. All rights reserved.
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
